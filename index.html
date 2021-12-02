@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="stylesheet" href="CSS/slide.css">
+    <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c49233b661.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Landing Page</title>
+  </head>
+  <body onload="Caracteres()">
+  
+    <header class="container">
+      <nav class="nav">
+
+        <img src="IMG/logo.png" alt="" />
+        <label for="#" id="btnmenu"><a href="#" class="fas fa-bars"></a></label>
+        <!-- <ul class="nav__items" id="menu">
+          <i class="fas fa-times"></i>
+          <li class="nav-link">
+            <a href="#Inicio" class="nav-linkitem">Inicio</a>
+          </li>
+          <li class="nav-link">
+            <a href="#Servicios" class="nav-linkitem">Beneficios</a>
+          </li>
+          <li class="nav-link">
+            <a href="#Precios" class="nav-linkitem">Precios</a>
+          </li>
+          <li class="nav-link">
+            <a href="#Proyectos" class="nav-linkitem">Proyectos</a>
+          </li>
+          <li class="nav-link">
+            <a href="#Contacto" class="nav-linkitem">Contacto</a>
+          </li>
+        </ul> -->
+      </nav>
+      <div class="container-content">
+        <div class="container-column1">
+          <h1 class="container__h1">Adquiere tu pagina Web al Mejor Precio</h1>
+          <figure class="container__figure">
+            <img src="IMG/undraw_modern_design_v-3-wv.svg" alt="" />
+          </figure>
+        </div>
+        <a href="#" class="button">Solicitar Pagina Web</a>
+        <aside class="container-column2">
+          <a href="#" class="fas fa-times" id="cross"></a>
+          <h2>Adquiere tu Sitio Web</h2>
+          <p>
+            Realiza tu pedido a través de mi landing page y me estaré poniendo
+            en contacto contigo lo más antes posible a través del correo
+            electrónico.
+          </p>
+          <div class="form">
+            <form action="">
+              <input
+                type="text"
+                class="form__input nombre"
+                placeholder="Nombre"
+                id="nombre"
+                maxlength="50"
+                !important
+              />
+              <input
+                type="text"
+                class="form__input correo"
+                placeholder="Correo electronico"
+                id="correo"
+                maxlength="50"
+                !important
+              />
+              <input
+                type="text"
+                class="form__input pais"
+                placeholder="Pais"
+                maxlength="15"
+                id="pais"
+                !important
+              />
+              <input
+                type="text"
+                class="form__input ciudad"
+                placeholder="Ciudad"
+                maxlength="20"
+                id="ciudad"
+                !important
+              />
+              <div class="number">
+                <input
+                  type="text"
+                  class="form__input codigo"
+                  placeholder="+51"
+                  maxlength="2"
+                  title="Ingresa tu codigo postal"
+                  id="codigo"
+                  !important
+                />
+                <input
+                  type="text"
+                  class="form__input numero"
+                  placeholder="Numero de celular"
+                  id="numero"
+                  maxlength="10"
+                  !important
+                />
+               
+                <p class="paragraph-alert">Solo puedes colocar un maximo de 9 caracteres</p>
+
+              </div>
+              <select name="" id="" class="select" >
+                <option value="" >¿Qué Tipo de sitio web necesitas?</option>
+                <option value="">Landing Pages</option>
+                <option value="">Pagina Informativa</option>
+                <option value="">Tienda en linea</option>
+                <option value="">Otros</option>
+                <option value=""></option>
+              </select>
+              <input type="button" class="form__button" value="Solicitar web" />
+            </form>
+          </div>
+        </aside>
+      </div>
+    </header>
+    <section class="section">
+      <h2 class="subtitle" id="Servicios">
+        Beneficios de adquirir tu sitio web
+      </h2>
+      <article class="section-article" id="article1">
+        <i class="far fa-file-alt"></i>
+        <h3 class="article__h3">Diseño UI</h3>
+        <p class="article__paragraph">
+          Diseñaremos la interfaz de tu sitio web en figma para que puedas ver
+          como seria el acabado final de tu sitio web, y como se te tiene hacer
+          entregal del mismo.
+        </p>
+      </article>
+      <article class="section-article" id="article2">
+        <i class="fas fa-mobile-alt"></i>
+        <h3 class="article__h3">Responsive Desing</h3>
+        <p class="article__paragraph">
+          Tu pagina web sera 100% adaptable a cualquier Dispositivo movil,
+          viendose de la mejor manera en cualquier resolución de pantalla.
+        </p>
+      </article>
+      <article class="section-article" id="article3">
+        <i class="fas fa-signal"></i>
+        <h3 class="article__h3">Posicionamiento SEO</h3>
+        <p class="article__paragraph">
+          Tu pagina sera posicionada en el buscador de google, de manera que
+          aparezca entre los primeros resultados de busqueda.
+        </p>
+      </article>
+      <article class="section-article" id="article4">
+        <i class="fas fa-server"></i>
+        <h3 class="article__h3">Hosting y Dominio</h3>
+        <p class="article__paragraph">
+          El hosting es el espacio de almacenamiento donde se alojan los
+          archivos que componen tu sitio web, y el dominio es el nombre con el
+          que tus visitantes accederán a él.
+        </p>
+      </article>
+      <article class="section-article" id="article5">
+        <i class="fas fa-lock"></i>
+        <h3 class="article__h3">Certificado SSL</h3>
+        <p class="article__paragraph">
+          Un certificado SSL es un certificado digital que autentica la
+          identidad de un sitio web y habilita una conexión cifrada que crea un
+          enlace cifrado entre un servidor web y un navegador web.
+        </p>
+      </article>
+      <article class="section-article" id="article6">
+        <i class="fas fa-tools"></i>
+        <h3 class="article__h3">Soporte Tecnico</h3>
+        <p class="article__paragraph">
+          Brindaremos soporte tecnico a tu sitio web durante 365 días para
+          actualizar tu contenido sin costo alguno.
+        </p>
+      </article>
+    </section>
+
+    <div class="price">
+      <h2 class="subtitle" id="Precios">Nuestros Precios</h2>
+      <div class="rate" id="rate1">
+        <div class="rate__content">
+          <h3 class="rate__h3">Web Basica</h3>
+          <img src="IMG/undraw_environmental_study_re_q4q8.svg" alt="" />
+          <h4 class="rate__h4"><span>S/.</span> 450</h4>
+        </div>
+
+        <div class="rate__description">
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> 4 páginas o
+            Secciones</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Slider
+            Principal</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Diseño web
+            Predefinido</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Adaptable a
+            Dispositivos moviles</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Formulario de
+            Contacto</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Mapa de
+            Ubicación</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Galeria de
+            Fotos</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Redes Sociales</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Soporte al sitio
+            web</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Seguridad SSL</span
+          >
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Dominio.COM</span>
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Hosting</span>
+        </div>
+        <div class="rate__payment">
+          <span>Medio de pago</span>
+
+          <div class="rate__payment-img">
+            <img src="IMG/banco-continental.png" alt="" />
+            <img src="IMG/bcp.png" alt="" />
+            <img src="IMG/interbank.png" alt="" />
+            <img src="IMG/paypal.png" alt="" />
+            <img src="IMG/yape.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="rate" id="rate2">
+        <div class="rate__content">
+          <h3 class="rate__h3">Web Profesional</h3>
+          <img src="IMG/undraw_certificate_-343-v.svg" alt="" />
+          <h4 class="rate__h4"><span>S/.</span> 850</h4>
+        </div>
+        <div class="rate__description">
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> 5 - 8 páginas o
+            Secciones</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Slider
+            Principal</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Diseño web
+            Predefinido</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Adaptable a
+            Dispositivos moviles</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Carrito de
+            Compras</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Blog de
+            Noticias</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Formulario de
+            Contacto</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Mapa de
+            Ubicación</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Galeria de
+            Fotos</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Redes Sociales</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Posicionamiento
+            SEO</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Plugins(Chat,
+            WhatsApp, Google Analytics etc)</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Soporte al sitio
+            web</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Seguridad SSL</span
+          >
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Dominio.COM</span>
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Hosting</span>
+        </div>
+        <div class="rate__payment">
+          <span class="rate__span">Medio de pago</span>
+
+          <div class="rate__payment-img">
+            <img
+              class="rate__method-img"
+              src="IMG/banco-continental.png"
+              alt=""
+            />
+            <img class="rate__method-img" src="IMG/bcp.png" alt="" />
+            <img class="rate__method-img" src="IMG/interbank.png" alt="" />
+            <img class="rate__method-img" src="IMG/paypal.png" alt="" />
+            <img class="rate__method-img" src="IMG/yape.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="rate" id="rate3">
+        <div class="rate__content">
+          <h3 class="rate__h3">Web Empresarial</h3>
+          <img src="IMG/undraw_team_page_re_cffb.svg" alt="" />
+          <h4 class="rate__h4"><span>S/.</span> 1250</h4>
+        </div>
+        <div class="rate__description">
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> 12 - 20 páginas o
+            Secciones</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Slider
+            Principal</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Diseño web
+            Predefinido</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Adaptable a
+            Dispositivos moviles</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Carrito de
+            Compras</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Blog de
+            Noticias</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Formulario de
+            Contacto</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Mapa de
+            Ubicación</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Galeria de
+            Fotos</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Redes Sociales</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Posicionamiento
+            SEO</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Panel de
+            administración</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Plugins(Chat,
+            WhatsApp, Google Analytics etc)</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Soporte al sitio
+            web</span
+          >
+          <span
+            ><img src="IMG/bx-check-circle.svg" alt="" /> Seguridad SSL</span
+          >
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Dominio.COM</span>
+          <span><img src="IMG/bx-check-circle.svg" alt="" /> Hosting</span>
+        </div>
+        <div class="rate__payment">
+          <span>Medio de pago</span>
+
+          <div class="rate__payment-img">
+            <img src="IMG/banco-continental.png" alt="" />
+            <img src="IMG/bcp.png" alt="" />
+            <img src="IMG/interbank.png" alt="" />
+            <img src="IMG/paypal.png" alt="" />
+            <img src="IMG/yape.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  <body>
+  
+  <br>
+  <h1>Proyectos mas populares</h1>
+  
+  <br><br>
+  
+  <section id="slider">
+    <input type="radio" name="slider" id="s1">
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3" checked>
+    <input type="radio" name="slider" id="s4">
+    <input type="radio" name="slider" id="s5">
+    <label for="s1" id="slide1">
+      <img src="IMG/Psicologia.png" height="100%" width="100%">
+    </label>
+    <label for="s2" id="slide2">
+          <img src="IMG/Veterinaria.png" height="100%" width="100%">
+    </label>
+    <label for="s3" id="slide3">
+          <img src="IMG/Landing Page.png" height="100%" width="100%">
+    </label>
+    <label for="s4" id="slide4">
+          <img src="IMG/header.jpg" height="100%" width="100%">
+    </label>
+    <label for="s5" id="slide5">
+          <img src="IMG/header.jpg" height="100%" width="100%">
+    </label>
+  </section>
+  
+  
+    <div class="clip-path"></div>
+    <footer class="footer">
+      <div class="footer-column1" id="column1">
+        <div class="column1-information">
+          <h3 class="column1-h3">Información</h3>
+          <hr />
+          <p class="column1-paragraph">
+            Agencia formada por los mejores desarrolladores en el área del Front
+            End con varios años de experiencia creando paginas para satisfacer a
+            nuestros Usuarios.
+          </p>
+        </div>
+        <div class="column1-attention">
+          <p class="attention-paragraph">
+            Contactanos que estamos atendiendo Todos los dias de 08:00 AM a
+            22:00
+          </p>
+          <i class="fas fa-mobile-alt"><span>+51 902165827</span></i>
+          <i class="fas fa-mail-bulk"
+            ><span>hanscristophergoytia@gmail.com</span></i
+          >
+        </div>
+      </div>
+      <div class="footer-column2" id="column2">
+        <h3 class="column2-h3">Menu de navegacion</h3>
+        <hr />
+        <ul class="column2__navegation">
+          <li class="navegation__link">
+            <a href="" class="navegation__linkitem">Inicio</a>
+          </li>
+          <li class="navegation__link">
+            <a href="" class="navegation__linkitem">Beneficios</a>
+          </li>
+          <li class="navegation__link">
+            <a href="" class="navegation__linkitem">Precios</a>
+          </li>
+          <li class="navegation__link">
+            <a href="" class="navegation__linkitem">Proyectos</a>
+          </li>
+          <li class="navegation__link">
+            <a href="" class="navegation__linkitem">Contactos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column3" id="column3">
+        <h3 class="column3-h3">Trabajamos Con:</h3>
+        <hr />
+        <div class="column3__navegation">
+          <a href="" class="navegation__linkitem"><i></i>Wordpress</a>
+          <a href="" class="navegation__linkitem"><i></i>Elementor</a>
+          <a href="" class="navegation__linkitem">HTML, CSS, JS</a>
+        </div>
+      </div>
+      <div class="footer-column4" id="column4">
+        <h3 class="column4-h3">Consulta sin costo</h3>
+        <hr />
+        <div class="column4__quote">
+          <p class="column4__paragraph">
+            Cotiza tu sitio web al mejor preció poniendote en contacto con
+            nosotros.
+          </p>
+
+          <a href="" class="column4__whatsapp"
+            ><i class="fab fa-whatsapp"></i>Consultar ahora</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="footer-end">
+      <div class="footer-copyright" id="footer1">
+        <span class="copyright-paragraph" id="copyright"
+          >Copyright © 2021 Agencia de Creacion de Paginas Web
+        </span>
+      </div>
+      <div class="footer-social" id="social">
+        <a href="" class="social__icon fab fa-facebook-f"></a>
+        <a href="" class="social__icon fab fa-instagram"></a>
+        <a href="" class="social__icon fab fa-twitter"></a>
+      </div>
+    </div>
+    <div class="fixed-icon" id="footer2">
+      <a href="" class="icon__whatsapp fab fa-whatsapp"></a>
+      <h2 class="icon__h2">Necesito ayuda</h2>
+    </div>
+    <script src="JS/animaciones.js"></script>
+    <script src="JS/main.js"></script> 
+    <script src="JS/Caracteres.js"></script>
+  </body>
+</html>
